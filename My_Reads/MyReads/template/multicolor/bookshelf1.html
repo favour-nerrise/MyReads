@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>About Us | Triangle</title>
+    <link type="text/css" rel="stylesheet" href="css/simplePagination.css"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.simplePagination.js"></script>
+  <script type="text/javascript" src="https://books.google.com/books/previewlib.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/lightbox.min.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+      <script type="text/javascript">
+        google.load("books", "0");
+
+        function initialize() {
+          var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
+          viewer.load('ISBN:0738531367');
+          var viewer2 = new google.books.DefaultViewer(document.getElementById('viewerCanvas2'));
+          viewer2.load('ISBN:0141974249');
+          var viewer3 = new google.books.DefaultViewer(document.getElementById('viewerCanvas3'));
+          viewer3.load('ISBN:1304666263');
+        }
+
+        google.setOnLoadCallback(initialize);
+      </script>
+
+      <!-- <script type="text/javascript">
+          $(function() {
+            $(selector).pagination({
+              items: 100,
+              itemsOnPage: 10,
+              cssStyle: 'light-theme'
+            });
+          });
+      </script> -->
+</head>
+
+<body>
+	<header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        	<h1 class="title"><img src="images/logo.png" alt="logo"> MyReads </h1>
+                    </a>
+
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <form role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+                            <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+<div class="canvases">
+  <div id="viewerCanvas"  style="width: 200px; height: 250px; float:left; position: absolute; left: 950px;" ></div>
+  <div id="viewerCanvas2" style="width: 200px; height: 250px; float:left; position: absolute; left: 700px;"></div>
+  <div id="viewerCanvas3" style="width: 200px; height: 250px; float:left; position: absolute; left: 450px;"></div>
+</div>
+
+<div class="pagination-page">
+    <table id="content"><tbody><tr class="table"></tr></tbody>
+        <script>
+          $(function() {
+            $(".pagination").pagination({
+              items: 3,
+              itemsOnPage: 3,
+              cssStyle: 'light-theme'
+            });
+        });
+        </script>
+  </table>
+</div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center bottom-separator">
+                  <div class="img-responsive inline">
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+                        <p>&copy; MyReads 2016. All Rights Reserved.</p>
+                    </div>
+              </div>
+            </div>
+    </footer>
+  <!--/#footer-->
+</body>
+</html>
