@@ -1,0 +1,29 @@
+{
+  "name": "myreads",
+  "version": "1.0.0",
+  "description": "Spotify for books",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "firebase": "^3.4.0",
+    "firebase-tools": "^3.0.7",
+    "nodemon": "^1.10.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/favour-nerrise/MyReads.git"
+  },
+  "author": "Favour Nerrise",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/favour-nerrise/MyReads/issues"
+  },
+  "homepage": "https://github.com/favour-nerrise/MyReads#readme"
+}

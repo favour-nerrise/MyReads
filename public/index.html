@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MyReads: Spotify for books">
+    <meta name="author" content="Favour Nerrise">
+    <title> Home | MyReads </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+    <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDaQgrxXks2t0sWeeoAX2hk5MkpUqK_iY4",
+    authDomain: "myreads-3f8bb.firebaseapp.com",
+    databaseURL: "https://myreads-3f8bb.firebaseio.com",
+    storageBucket: "myreads-3f8bb.appspot.com",
+    messagingSenderId: "834319825330"
+  };
+  firebase.initializeApp(config);
+</script>
+    <!-- <script type="text/javascript" src="js/register.js"></script> -->
+    <script src="https://use.fontawesome.com/400f4d650b.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js1/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <!--[if lt IE 9]>-->
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+</head>
+<!--End of head section-->
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                    <div class="social-icons pull-right">
+                        <div class="addthis_inline_share_toolbox"></div>
+                        <ul class="nav nav-pills">
+                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <h1><img src="images/logo.png" alt="logo"></h1>
+                    </a>
+
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- <li class="active">
+                            <a href="index.html">
+                                <i class="fa fa-home fa-fw" aria-hidden="true"></i> Home
+                            </a>
+                        </li> -->
+                        <!-- <li class="dropdown active"><a href="#">Pages <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="./html/aboutus.html">About Us</a></li>
+                                <li><a href="./html/contact.html">Contact Us</a></li> -->
+                                <!--<li><a href="./html/404.html">404 error</a></li>
+                            <li><a href="./html/coming-soon.html">Coming Soon</a></li>-->
+                            <!-- </ul>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="search">
+                    <form role="form">
+                        <i class="fa fa-search"></i>
+                        <div class="field-toggle">
+                            <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                        </div>
+                    </form>
+                </div>
+                <div class="quickstart-user-details-container">
+                Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
+                <div>Firebase auth <code>currentUser</code> object value:</div>
+                <pre><code id="quickstart-account-details">null</code></pre>
+              </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+
+    <section id="home-slider">
+        <div class="container">
+            <div class="row">
+                <div class="main-slider animate-in">
+                    <div class="slide-text">
+                        <h1>WELCOME</h1>
+                        <p>Distracted? In need of some humor? Access your books below.</p>
+                        <!-- <div class="form-group">
+                            <input type="username" name="username" class="form-login" placeholder="User ID" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="password" class="form-login" placeholder="Password" required>
+                        </div> -->
+                        <!-- <input type="submit" value="LOG IN" name="submit" class="btn btn-common"> -->
+                        <!-- <p><a href="./html/register.html" id="register">Sign Up?</a></p> -->
+                        <button type="button" class="btn btn-common" id="learnmore"><a href="html/aboutus.html"></a>LEARN MORE</button>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-common" id="loginbtn" data-toggle="modal" data-target="#myModal">LOG IN</button>
+                    </div>
+                    <img src="images/hill.png" class="slider-hill" alt="slider image">
+                    <img src="images/house.png" class="slider-house" alt="slider image">
+                    <img src="images/sun.png" class="slider-sun" alt="slider image">
+                    <img src="images/birds1.png" class="slider-birds1" alt="slider image">
+                    <img src="images/birds2.png" class="slider-birds2" alt="slider image">
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">LOG IN</h4>
+                            </div>
+                            <div class="modal-body">
+                                <!--...social login-->
+                                <div class="social_login">
+                                    <div class="clearfix">
+                                        <a href="#" class="social_box fb"><span class="icon"><i class="fa fa-facebook"></i></span><span class="icon_title">Connect with
+        Facebook</span></a><a href="#" class="social_box google"><span class="icon"><i class="fa fa-google"></i></span><span class=
+        "icon_title">Connect with Google</span></a>
+                                    </div>
+                                    <div class="centeredText">
+                                        <span>Or use your Email address</span>
+                                    </div>
+                                    <div class="action_btns">
+                                        <!-- <div class="one_half">
+                                            <a class="btn" href="#" id="login_form" name="login_form">LOG IN</a>
+                                        </div> -->
+                                        <div class="form-group">
+                                            <input id="login_form" type="submit" name="login_form" class="btn btn-submit" value="Log In">
+                                        </div>
+                                        <div class="form-group">
+                                            <input id="signup_form" type="submit" name="submit" class="btn btn-submit" value="Sign Up">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- LOGIN FORM -->
+                                <div class="user_login">
+                                    <form>
+                                        <input id="email" type="email" autocomplete="off" placeholder="Email Address/Username" required><br>
+                                        <input id="password" type="password" autocomplete="off" placeholder="Password" required><br>
+                                        <div class="checkbox">
+                                            <input id="remember" type="checkbox"><label for="remember">Remember me on this computer</label>
+                                        </div>
+                                        <div class="action_btns">
+                                          <div class="form-group">
+                                              <input id="back" type="button" name="back" class="btn back_btn" value="Back"><i id="back-arrow" class="fa fa-angle-double-left"></i></input>
+                                          </div>
+                                            <!-- <div class="one_half last">
+                                                <a class="btn" href="#">Login</a>
+                                            </div> -->
+                                            <div class="form-group">
+                                                <input id="login" type="submit" name="submit" class="btn btn-submit" value="Log In">
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <a class="forgot_password" href="#">Forgot password?</a>
+                                </div>
+                                <!-- SIGN UP -->
+                                <div class="user_register">
+                                    <form>
+                                        <input id="firstName" type="text" autocomplete="off" placeholder="First Name" required="required"><br>
+                                        <input id="lastName" type="text" autocomplete="off" placeholder="Last Name" required><br>
+                                        <input id="email2" type="email" autocomplete="off" placeholder="Email Address" required><br>
+                                        <input id="password" type="password" autocomplete="off" placeholder="Password" required><br>
+                                        <input id="confirmpassword" type="password" autocomplete="off" placeholder="Confirm Password" required><br>
+                                    <div class="checkbox">
+                                        <input id="send_updates" type="checkbox"><label for="send_updates">Send me occasional email updates</label>
+                                    </div>
+                                    <div class="action_btns">
+                                        <!-- <div class="one_half">
+                                            <a class="btn back_btn" href="#"><i class="fa fa-angle-double-left"></i>Back</a>
+                                        </div> -->
+                                        <div class="form-group">
+                                            <input id="back" type="button" name="back" class="btn back_btn" value="Back"><i id="back-arrow" class="fa fa-angle-double-left"></i></input>
+                                        </div>
+
+                                          <div class="form-group">
+                                              <input id="signup" type="submit" name="submit" class="btn btn-submit" value="Sign Up">
+                                          </div>
+                                            <!--TO DO:success popup-->
+                                </div>
+                              </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#home-slider-->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center bottom-separator">
+                    <img src="images/under.png" class="img-responsive inline" alt="footer">
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="contact-info bottom">
+                        <h2>Contacts</h2>
+                        <address>
+                        E-mail: <a href="mailto:favournerrise@gmail.com">info@myreads.com</a> <br>
+                        Phone: +1 (123) 456 7890 <br>
+                        Fax: +1 (123) 456 7891 <br>
+                        </address>
+
+                        <h2>Address</h2>
+                        <address>
+                        Unit C2, St.Vincent's Trading Est., <br>
+                        Feeder Road, <br>
+                        Bristol, BS2 0UY <br>
+                        United Kingdom <br>
+                        </address>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="contact-form bottom">
+                        <h2>Send a message</h2>
+                        <form id="main-contact-form" name="contact-form" method="post" action="./html/sendemail.php">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" required="required" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" required="required" placeholder="Email Address">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Your text here"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="submit" class="btn btn-submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+                        <p>© MyReads 2016. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55be3b010aebd061"></script>
+</body>
+
+</html>
