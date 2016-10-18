@@ -1,6 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
-@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
 body {
     background: #fff;
     font-family: 'Lato', sans-serif;
@@ -8,6 +8,7 @@ body {
     font-size: 14px;
     line-height: 22px;
     color: #000;
+    /*overflow: hidden;*/
 }
 
 html {
@@ -566,7 +567,7 @@ ul.sub-menu {
 }
 
 /*************************
-*******Footer******
+*************
 **************************/
 #footer {
     padding-bottom: 10px;
@@ -575,6 +576,15 @@ ul.sub-menu {
     background-position: bottom;
     background-size: contain;
 }
+
+#footer2 {
+    padding-bottom: 10px;
+    background-image: url(../images/home/footer2.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: contain;
+}
+
 #footer h1 {
     margin-bottom: 65px;
     margin-top: 36px;
@@ -1266,7 +1276,7 @@ ul.elements li>i {
 }
 
 /*************************
-*******Portfolio Default**
+*******.portfolio-filter {.portfolio-filter { Default**
 **************************/
 .portfolio-single {
     position: relative;
@@ -1341,6 +1351,7 @@ ul.elements li>i {
 .portfolio-filter {
     margin: 80px 0;
     padding: 0;
+    position: static;
 }
 .portfolio-filter li {
     display: inline-block;

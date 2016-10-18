@@ -1,0 +1,125 @@
+/*.browse_menu {
+  display: inline-block;
+  position: absolute;
+  height: 140px;
+  width: 735px!important;
+  /*background-color: #0f1113;
+  background-color: black;
+  padding-left: 20px;
+  top: 0;
+  right: 0;
+  border-bottom: 3px solid #2f9697;
+}*/
+
+.browse_nav {
+  position: absolute;
+  width: 800px!important;
+  /*background-color: #0f1113;*/
+  background-color: #4fcccd;
+  padding-left: 220px;
+  height: 100px!important;
+  top: 0px;
+  left: 0;
+  border-bottom: 3px solid #2f9697;
+
+}
+
+span.heading {
+    position: static;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+/*.suggest_nav {
+  width: 135px!important;
+  /*background-color: #0f1113;
+  background-color: #4fcccd;
+  padding-left: 20px;
+  height: 680px!important;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  border-right: 3px solid #2f9697;
+}*/
+
+.browse_nav img {
+  width: 30%;
+  height: 30%;
+}
+
+span#logo.nav-text {
+    top: -120px;
+    position: relative;
+    color: white;
+}
+
+/*li.browse_menu {
+  display: inline;
+    top: -100px;
+}*/
+
+.browse_nav .fa {
+  position: static;
+  margin-left: -30px;
+  font-size: large;
+  color: black;
+}
+
+.browse_nav .fa:hover {
+  color: #686868;
+}
+
+/*.browse_nav .user {
+  display: inline-block;
+  position: static;
+  margin-left: -30px;
+  margin-top: 100px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}*/
+
+/*.browse_nav #profile_photo {
+  background-image: url('http://placehold.it/350x150');
+}*/
+/*i.fa.fa-cog {
+    position: static;
+    margin-top:40px;
+    text-align: center;
+}*/
+
+/*i.fa.fa-search {
+    margin-bottom: 180px;
+     position: fixed;
+    top: 200px;
+}*/
+
+.browse_nav .nav-text {
+    position: static;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /*cursor:pointer;*/
+    font-size: 14px;
+    font-weight: 400px;
+    /*color: #dfe0e6;*/
+    color: white;
+    /*width: 10px;*/
+    /*background-color: #1c1c1f;
+    border: 1px solid #1c1c1f;
+    border-radius: 10px;*/
+    margin-left: -30px;
+}
+
+
+/*Main Browse Nav Div for Explore*/
+/*.browse_nav1 .nav-text {
+  position: relative;
+  font-size: 100px bold;
+}*/

@@ -92,7 +92,6 @@ var query=$(this).data('query');
 $(document).ready((function() {
   $("#eyebutton6").click(function() {
 var query=$(this).data('query');
-
     $.ajax({
       url: 'http://localhost:3000/search/'+ query,
       success: function(response){
@@ -104,7 +103,6 @@ var query=$(this).data('query');
     });
   });
 }));
-
 
 $(document).ready((function() {
   $("#eyebutton7").click(function() {

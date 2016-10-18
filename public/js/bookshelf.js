@@ -1,13 +1,18 @@
-/**
-* simplePagination.js v1.6
-* A simple jQuery pagination plugin.
-* http://flaviusmatis.github.com/simplePagination.js/
-*
-* Copyright 2012, Flavius Matis
-* Released under the MIT license.
-* http://flaviusmatis.github.com/license.html
-*/
+// ****** LOAD GOOGLE PREVIEW LIB API ***********
+google.load("books", "0");
 
+function initialize() {
+	var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
+	viewer.load('ISBN:0738531367');
+	var viewer2 = new google.books.DefaultViewer(document.getElementById('viewerCanvas2'));
+	viewer2.load('ISBN:0141974249');
+	var viewer3 = new google.books.DefaultViewer(document.getElementById('viewerCanvas3'));
+	viewer3.load('ISBN:1304666263');
+}
+
+google.setOnLoadCallback(initialize);
+
+// ****************PAGINATION SCRIPT****************
 (function($){
 
 	var methods = {
@@ -445,7 +450,5 @@ jQuery(function($) {
 
     // and we'll also call it to check right now!
     checkFragment();
-
-
 
 });
